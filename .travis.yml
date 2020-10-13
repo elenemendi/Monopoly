@@ -5,4 +5,4 @@ addons:
 script:
 #the following comman line builds the project, runs te thests with coverage
 #and then execute te sonarcloud analysis
-- mvn clean org.jacoco:jacoco-maven-plugin:pregare-agent org.jacoco:jacoco-maven-plugin:report install sonar:sonar
+- mvn -X clean org.jacoco:jacoco-maven-plugin:pregare-agent org.jacoco:jacoco-maven-plugin:report install sonar:sonar
