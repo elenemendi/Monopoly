@@ -15,7 +15,7 @@ import edu.ncsu.monopoly.Player;
 
 
 public class BuyHouseDialog extends JDialog {
-	private JComboBox cboMonopoly; 
+	private JComboBox <String> cboMonopoly; 
 	private JComboBox cboNumber;
 
 	private Player player;
@@ -44,8 +44,8 @@ public class BuyHouseDialog extends JDialog {
 		return btn;
 	}
 
-	private JComboBox buildMonopolyComboBox() {
-		cboMonopoly = new JComboBox(player.getMonopolies());
+	private JComboBox <String> buildMonopolyComboBox() {
+		cboMonopoly = new JComboBox<String> (player.getMonopolies());
 		return cboMonopoly;
 	}
 	
